@@ -1,9 +1,18 @@
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+import routes from './routes';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <Router>
+        <Switch>
+          {routes.map((route,index)=>(
+          <Route key={index} path={route.path} exact render={(props)=><route.component {...props}/>}></Route>
+          ))}
+        </Switch>
+      </Router>
     </div>
   );
 }
