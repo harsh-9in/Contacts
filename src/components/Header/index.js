@@ -14,8 +14,6 @@ const Header = () => {
                 <Icon name='add'></Icon>
                 Create Contact
             </Button>
-
-
         </Menu>
     );
 };
