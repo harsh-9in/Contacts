@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import logo from './assects/images/logo.svg';
+// import logo from './assects/images/logo.svg';
 
 
 ReactDOM.render(
