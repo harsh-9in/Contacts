@@ -1,7 +1,11 @@
-import React from 'react'
+import React,{ useContext } from 'react'
 import Header from '../../components/Header';
+import { GlobalContact } from '../../context/reducers/Provider';
+
 
 const Contacts = () => {
+    const context=useContext(GlobalContact);
+    console.log("context",context);
     return (
         <div>
             <Header />
